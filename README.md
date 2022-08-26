@@ -22,7 +22,7 @@ It cas represent as O(n) , Ω(n) , θ(n)
 
 ##### Basic term of Recursive Function :
 
-**what is Recursive-Call**
+**What is Recursive-Call ?**
 
 **Ans :** Just see the Example 
 
@@ -68,6 +68,28 @@ It cas represent as O(n) , Ω(n) , θ(n)
         fun(3);
     }
 ```
+
+> Which Recursive Function is **not `Tail-Recursion`** ?
+
+**Ans :** In Recursive function , If **Recursive-Call** is the **Last-Statement** of a Recursive Function
+and **Extra operation (eg: Addition , minus , or-something else)**
+is performing with that **Recursive-Call** then the function **not `Tail-Recursion`**
+
+
+```
+    private static void fun(int n){
+        if (n>0){
+            System.out.println(n);
+            fun(n-1) * 3 ; // This is Not Tail-Recursion because extra (* 3 ) operation is added 
+        }
+    }
+
+    public static void main(String[] args) {
+        fun(3);
+    }
+```
+ 
+ 
 
 
 **What is `Head-Recursion` ?**
