@@ -299,6 +299,8 @@ Time Complexity
 **Ans :** Array is fixed Sized . It is easy it `insert` , `deletion` instead of Array 
 
 
+#### difference between `Array` vs `Linked-List` ?
+
 | Topic                                            | Array                                                                 | Linked-List                                                                     |
 |--------------------------------------------------|-----------------------------------------------------------------------|---------------------------------------------------------------------------------|
 | size                                             | fixed                                                                 | not fixed                                                                       |
