@@ -290,6 +290,7 @@ Time Complexity
 
 
 <h3 style="text-align:center ;">  Sorting  </h3>
+<div/>
 
 > `Note :`
 >There are various Sorting Techniques . Each sorting techniques has own purpose . We 
