@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a18fa707-a66d-4926-8f96-41f0081dc518" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/recursion/TailRecursion.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/array/search/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/array/search/LinearSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/recursion/HeadRecursion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/recursion/TreeRecursion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -22,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Kotlin File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,7 +58,20 @@
       <recent name="com.example" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BinarySearch">
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.array.search.BinarySearch" />
+      <module name="Data-Structure-And-Algo-Recap.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.array.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TailRecursion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.recursion.TailRecursion" />
       <module name="Data-Structure-And-Algo-Recap.main" />
@@ -69,8 +85,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TreeRecursion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.recursion.TreeRecursion" />
+      <module name="Data-Structure-And-Algo-Recap.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.recursion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinarySearch" />
+        <item itemvalue="Application.TreeRecursion" />
         <item itemvalue="Application.TailRecursion" />
       </list>
     </recent_temporary>
