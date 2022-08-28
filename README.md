@@ -287,12 +287,95 @@ Time Complexity
 - Best Case : O(1)
 - Avg Case :  O(n log n)  
 
+> `sorting` has show after **Linked Lists**
 
 
-<h3 style="text-align:center ;">  Sorting  </h3>
-<div/>
+### Linked-List 
 
-> `Note :`
->There are various Sorting Techniques . Each sorting techniques has own purpose . We 
->can not say that - " xyz sorting Techniques is the best" . 
+<Hr/>
+
+#### Q . Why we will use `Linked-List` instead of Array ?
+
+**Ans :** Array is fixed Sized . It is easy it `insert` , `deletion` instead of Array 
+
+
+| Topic                                            | Array                                                                 | Linked-List                                                                     |
+|--------------------------------------------------|-----------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| size                                             | fixed                                                                 | not fixed                                                                       |
+| operation (means : addition , insertion , etc .) | add element , removing element these operations are `costly` in array | add element , removing element these operations are `not costly` in Linked-List |
+
+
+
+#### What is Linked-Lists ? 
+
+**Ans :** Linked-Lists are `Nodes` . Each `Node` contains **data** and Pointing to **Next Node**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[//]: # (<h3 style="text-align:center ;">  Sorting  </h3>)
+
+[//]: # (<div/>)
+
+[//]: # ()
+[//]: # (> `Note :`)
+
+[//]: # (>There are various Sorting Techniques . Each sorting techniques has own purpose . We )
+
+[//]: # (>can not say that - " xyz sorting Techniques is the best" . )
+
+[//]: # ()
+[//]: # (**The Sorting Techniques are :**)
+
+[//]: # ()
+[//]: # (- Bubble sort)
+
+[//]: # (- Insertion sort)
+
+[//]: # (- Selection sort)
+
+[//]: # (- Heap sort)
+
+[//]: # (- Merge sort)
+
+[//]: # (- Quick sort)
+
+[//]: # (- Tree sort)
+
+[//]: # (- Shell sort)
+
+[//]: # (- Count sort)
+
+[//]: # (- Bucket / Bin sort)
+
+[//]: # (- Radix sort )
+
 
