@@ -187,7 +187,7 @@ int fun (int n){
 - Searching
 - Sorting 
 
-### Searching : 
+   <h3 style="text-align:center">  Searching   </h3>
 
 There are mainly **2 Types** of Searching Technique
 - Linear Search
@@ -282,3 +282,16 @@ Time Complexity
     }
 
 ```
+
+Time Complexity
+- Best Case : O(1)
+- Avg Case :  O(n log n)  
+
+
+
+<h3 style="text-align:center">  Sorting  </h3>
+
+> `Note :`
+>There are various Sorting Techniques . Each sorting techniques has own purpose . We 
+>can not say that - " xyz sorting Techniques is the best" . 
+
