@@ -312,6 +312,21 @@ Time Complexity
 
 **Ans :** Linked-Lists are `Nodes` . Each `Node` contains **data** and Pointing to **Next Node**
 
+> ##### Some terms in Linked-Lists :
+> `Head :` **The entry point into a linked list** is called the `head` . 
+> 
+> `Tails :` **The last node of a linked list** is called the `Tails` .
+> 
+> `Node :` It contain **Data** and **pointing to next Node / Hold address of next Node** .
+
+
+    +---------+-----------------------+ 
+    |         |                       |
+    |   Data  | Adress of Next Node   |
+    |         |                       |
+    +---------------------------------+ 
+            Diagram of Node
+
 
 
 
