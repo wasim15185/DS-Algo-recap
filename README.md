@@ -301,10 +301,11 @@ Time Complexity
 
 #### difference between `Array` vs `Linked-List` ?
 
-| Topic                                            | Array                                                                 | Linked-List                                                                     |
-|--------------------------------------------------|-----------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| size                                             | fixed                                                                 | not fixed                                                                       |
-| operation (means : addition , insertion , etc .) | add element , removing element these operations are `costly` in array | add element , removing element these operations are `not costly` in Linked-List |
+| Topic                                            | Array                                                                 | Linked-List                                                                                                               |
+|--------------------------------------------------|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| size                                             | fixed                                                                 | not fixed                                                                                                                 |
+| operation (means : addition , insertion , etc .) | add element , removing element these operations are `costly` in array | add element , removing element these operations are `not costly` in Linked-List                                           |
+| Searching                                        | `Linear` & `Binary` both **Searching** can performed in **Array**     | **Only** `Linear` **Searching** can perform in **Linked-List** . `Binary-Search` **Can not** performed in **Linked-List** |
 
 
 
@@ -318,6 +319,8 @@ Time Complexity
 > `Tails :` **The last node of a linked list** is called the `Tails` .
 > 
 > `Node :` It contain **Data** and **pointing to next Node / Hold address of next Node** .
+>
+> `Searching :` `Binary-Search` **Can-not** perform in **Linked-List**
 
 
     +---------+-----------------------+ 
@@ -325,9 +328,135 @@ Time Complexity
     |   Data  | Adress of Next Node   |
     |         |                       |
     +---------------------------------+ 
-            Diagram of Node
+           Simple Diagram of Node
 
 
+
+```
+
+public class SinglyLinkedList {
+
+   public Node head ;
+
+    /**
+     * <b>Node : </b>It contain <b>Data</b> and <b>pointing to next Node / Hold address of next Node</b> .
+     */
+    public static class Node{
+        int data ;
+        Node next ;
+        Node(int data){
+            this.data=data ;
+
+        }
+    }
+
+    /**
+     *{@link #display()} : This method is for display all data in <b>Linked-List</b>
+     */
+    public void display(){
+        Node temp =head ;
+
+        System.out.print("[");
+        while (temp != null){
+            System.out.print(temp.data+" ,");
+            temp=temp.next ;
+        }
+        System.out.print("]");
+    }
+
+    public void recursive_Display(){
+        recursiveDisplay(head) ;
+    }
+
+    /**
+     * {@link #recursiveDisplay(Node)} :this method display all method in LinkedList using "Recursive Function" <br/>
+     *
+     * <b>Note :</b> If Recursive Function <b>"travers a Linked-List Once"</b> then Time-Complexity = O(n+1) means O(n)
+     *
+     * @param node
+     */
+    private void recursiveDisplay(Node node){
+        if (node != null){
+            System.out.println(node.data);
+            recursiveDisplay(node.next);
+        }
+    }
+
+}
+
+
+
+// This Main Function
+
+main(){
+
+SinglyLinkedList list = new SinglyLinkedList() ;
+
+        // Here we created Nodes
+
+        Node first = new Node(1);
+        Node second = new Node(2) ;
+        Node third = new Node(-9) ;
+        Node fourth = new Node(3);
+
+        // Now Setting Head in Linked-List
+
+        /**
+         *          list.head
+         *             |
+         *             |
+         *         +----+------+
+         *         | 1  |  o-------->
+         *         +----+------+
+         */
+
+        list.head=first ; // <-- Here we setting up "Head"
+
+
+        /**
+         *          list.head        second
+         *             |                |
+         *             |                |
+         *         +----+------+     +----+------+
+         *         | 1  |  o-------->| 2  |  o-------->
+         *         +----+------+     +----+------+
+         */
+
+        first.next=second ; // liking "First-Node" with "Second-Node"
+
+
+        /**
+         *          list.head        second              third
+         *             |                |                  |
+         *             |                |                  |
+         *         +----+------+     +----+------+     +----+------+
+         *         | 1  |  o-------->| 2  |  o-------->| -9 |  o-------->
+         *         +----+------+     +----+------+     +----+------+
+         */
+
+        second.next=third ; // liking "Second-Node" with "Third-Node"
+
+
+         /**          list.head        second              third            fourth
+         *             |                |                  |                   |
+         *             |                |                  |                   |
+         *         +----+------+     +----+------+     +----+------+      +----+------+
+         *         | 1  |  o-------->| 2  |  o-------->| -9 |  o--------> | 3 |  null
+         *         +----+------+     +----+------+     +----+------+      +----+------+
+         */
+
+        third.next=fourth; // liking "Third-Node" with "Fourth-Node"
+
+ 
+        //list.display(); // <-- Node display all elements (using while loop)
+
+
+        list.recursive_Display(); // <-- Node display all elements (using while Recursive)
+
+ 
+}
+
+```
 
 
 
